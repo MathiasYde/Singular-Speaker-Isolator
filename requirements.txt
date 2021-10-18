@@ -1,0 +1,10 @@
+### Python 3.8.2
+
+### Newer packages might work,
+### these versions are just the ones that I have locally installed
+tensorflow == 2.6.0   # Apache License 2.0
+sounddevice == 0.4.2  # MIT License
+click == 7.1.2        # BSD 3-Clause "New" or "Revised" License
+pick == 1.0.0         # MIT License
+numpy == 1.19.5       # BSD 3-Clause "New" or "Revised" License
+matplotlib ==  3.3.1  # Python Software Foundation License
