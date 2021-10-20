@@ -25,6 +25,16 @@ class WaveformPlotter:
 		self.plotdata = np.zeros((length, channel_count))
 		self.lines = [ax.plot(plotdata) for ax, plotdata in zip(self.axes, self.plotdata.transpose())]
 
+		# format axes
+		for ax in self.axes:
+			ax.axis((0, len(self.plotdata), -1, 1))
+			ax.set_yticks([0])
+			ax.yaxis.grid(True)
+			ax.tick_params(bottom='off', top='off', labelbottom='off',
+										right='off', left='off', labelleft='off')
+		self.fig.tight_layout(pad=0)
+
+
 	def init(self):
 		def update_plot(frame):
 			while True:

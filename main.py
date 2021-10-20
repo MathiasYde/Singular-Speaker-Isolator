@@ -51,7 +51,5 @@ def main(input_device, output_device):
 		for processor in audio_processors:
 			processor.init()
 
-		input()
-
 if __name__ == "__main__":
 	main()
