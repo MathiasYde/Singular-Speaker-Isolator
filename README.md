@@ -20,6 +20,7 @@ It's possible to speficy the audio devices using the ``-i`` or ``--input`` and `
 - Active noise cancellation
 - Easier interface
 - Mute singular speaker
+- Filter compatible devices
 
 ## Challenges
 

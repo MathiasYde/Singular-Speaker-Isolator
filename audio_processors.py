@@ -54,3 +54,15 @@ class WaveformPlotter:
 	def process(self, audio):
 		self.audioqueue.put(audio)
 		return audio
+
+class IsolatorProcessor:
+	def __init__(self):
+		self.distance_between_ears = 0.15 # meters
+		self.speed_of_sound = 343 # meters per second
+		self.sound_travel_time = self.distance_between_ears / self.speed_of_sound # max sound travel between ears
+
+	def init(self):
+		pass
+
+	def process(self, audio):
+		return audio
